@@ -1,6 +1,7 @@
 import "./App.css";
 import WorkFile_searchImage from "./WorkFile_searchImage.svg";
 import WorkFile_mainImage from "./WorkFile_mainImage.svg";
+import WorkFile_properImage from "./WorkFile_properImage.svg";
 
 function App() {
   return (
@@ -41,70 +42,102 @@ function App() {
 
         <div className="dayWeatherDetails">
           <div className="detailsWind">
-            <img className="detailsIcon" href="#" alt="Weather" />
+            <img
+              className="detailsIcon"
+              src={WorkFile_properImage}
+              alt="Weather"
+            />
             <p className="detailsProperty">Wind</p>
             <p className="detailsValue">11 km/h</p>
           </div>
           <div className="detailsHumidity">
-            <img className="detailsIcon" href="#" alt="Weather" />
+            <img
+              className="detailsIcon"
+              src={WorkFile_properImage}
+              alt="Weather"
+            />
             <p className="detailsProperty">Humidity</p>
             <p className="detailsValue">77%</p>
           </div>
           <div className="detailsUVIndex">
-            <img className="detailsIcon" href="#" alt="Weather" />
+            <img
+              className="detailsIcon"
+              src={WorkFile_properImage}
+              alt="Weather"
+            />
             <p className="detailsProperty">UV Index</p>
             <p className="detailsValue">0 of 10</p>
           </div>
           <div className="detailsPressure">
-            <img className="detailsIcon" href="#" alt="Weather" />
+            <img
+              className="detailsIcon"
+              src={WorkFile_properImage}
+              alt="Weather"
+            />
             <p className="detailsProperty">Pressure</p>
             <p className="detailsValue">1030.1 mb</p>
           </div>
         </div>
 
         <div className="weatherForecast">
-          <p>Forecast for next 6 days</p>
-          <div>
-            <div>
+          <p className="weatherForecastTitle">Forecast for next 5 days</p>
+          <div className="weatherForecastDiv">
+            <div className="forecastDayDiv">
               <p className="forecastDay">Mon</p>
-              <img className="forecastIcon" href="#" alt="Weather" />
-              <p className="forecastTempMax">12°C</p>
-              <p className="forecastTempMin">9°C</p>
+              <img
+                className="forecastIcon"
+                src={WorkFile_mainImage}
+                alt="Weather"
+              />
+              <p className="forecastTempMax">12°</p>
+              <p className="forecastTempMin">9°</p>
             </div>
             <div>
               <p className="forecastDay">Mon</p>
-              <img className="forecastIcon" href="#" alt="Weather" />
-              <p className="forecastTempMax">12°C</p>
-              <p className="forecastTempMin">9°C</p>
+              <img
+                className="forecastIcon"
+                src={WorkFile_mainImage}
+                alt="Weather"
+              />
+              <p className="forecastTempMax">12°</p>
+              <p className="forecastTempMin">9°</p>
             </div>
             <div>
               <p className="forecastDay">Mon</p>
-              <img className="forecastIcon" href="#" alt="Weather" />
-              <p className="forecastTempMax">12°C</p>
-              <p className="forecastTempMin">9°C</p>
+              <img
+                className="forecastIcon"
+                src={WorkFile_mainImage}
+                alt="Weather"
+              />
+              <p className="forecastTempMax">12°</p>
+              <p className="forecastTempMin">9°</p>
             </div>
             <div>
               <p className="forecastDay">Mon</p>
-              <img className="forecastIcon" href="#" alt="Weather" />
-              <p className="forecastTempMax">12°C</p>
-              <p className="forecastTempMin">9°C</p>
+              <img
+                className="forecastIcon"
+                src={WorkFile_mainImage}
+                alt="Weather"
+              />
+              <p className="forecastTempMax">12°</p>
+              <p className="forecastTempMin">9°</p>
             </div>
             <div>
               <p className="forecastDay">Mon</p>
-              <img className="forecastIcon" href="#" alt="Weather" />
-              <p className="forecastTempMax">12°C</p>
-              <p className="forecastTempMin">9°C</p>
-            </div>
-            <div>
-              <p className="forecastDay">Mon</p>
-              <img className="forecastIcon" href="#" alt="Weather" />
-              <p className="forecastTempMax">12°C</p>
-              <p className="forecastTempMin">9°C</p>
+              <img
+                className="forecastIcon"
+                src={WorkFile_mainImage}
+                alt="Weather"
+              />
+              <p className="forecastTempMax">12°</p>
+              <p className="forecastTempMin">9°</p>
             </div>
           </div>
         </div>
 
-        <div>
+        <hr className="spaceHr" />
+
+        <div className="gitHub">
           <p>
             <a href="https://github.com/LetYana/React_Weather">
               Open-source code on GitHub

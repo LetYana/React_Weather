@@ -11,12 +11,14 @@
   text-align: center;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
+  color: var(--font-color);
   background-color: var(--back-color);
+  padding: 100px 0;
 }
 
 .Wrapper {
   margin: 0 auto;
-  margin-top: 100px;
+  padding-bottom: 30px;
   max-width: 700px;
   background-color: var(--board-color);
   border: solid #ffffff 5px;
@@ -24,6 +26,7 @@
   border-radius: 45px;
 }
 
+/* ///////////////////////// */
 .citySearch {
   background-color: var(--back-color);
   padding: 70px 50px 30px;
@@ -55,6 +58,7 @@
   background: linear-gradient(140deg, #c35eff, #6476f6);
 }
 
+/* /////////////////////////// */
 .dateData {
   margin: 70px 0 90px;
   text-transform: uppercase;
@@ -76,6 +80,7 @@
   margin: 0;
 }
 
+/* ///////////////////// */
 .dayWeather {
   padding: 0 5%;
   display: flex;
@@ -112,4 +117,108 @@
   margin: 0;
   color: var(--primary-color);
   text-transform: uppercase;
+}
+
+/* ///////////////////// */
+.dayWeatherDetails {
+  margin: 90px 0 40px;
+  padding: 0 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detailsWind,
+.detailsHumidity,
+.detailsUVIndex,
+.detailsPressure {
+  width: 16%;
+}
+
+.detailsIcon {
+  text-align: center;
+}
+
+.detailsProperty {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 12px 0 5px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.detailsValue {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* ////////////////////////////////// */
+.weatherForecast {
+  padding: 0 12%;
+  margin: 90px 0 50px;
+}
+
+.weatherForecastTitle {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.weatherForecastDiv {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.weatherForecastDiv div {
+  width: 9%;
+  background-color: var(--back-color);
+  padding: 12px 21px 12px;
+  border-radius: 12px;
+}
+
+.weatherForecastDiv p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.forecastIcon {
+  margin: 10px 0 10px;
+}
+
+.forecastTempMax,
+.forecastTempMin {
+  display: inline;
+}
+
+.forecastTempMax {
+  padding-right: 10px;
+}
+
+/* //////////////////////////////////////// */
+.spaceHr {
+  width: 76%;
+  border: solid 1px var(--back-color);
+}
+
+.gitHub {
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.gitHub a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.gitHub a:hover {
+  color: var(--primary-color);
 }
