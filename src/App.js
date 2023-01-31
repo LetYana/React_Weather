@@ -13,7 +13,7 @@ function App() {
             className="cityInput"
             type="search"
             placeholder="Enter a city"
-            autofocus
+            autofocus="on"
             required
             autocomplete="off"
           />
@@ -82,7 +82,7 @@ function App() {
         <div className="weatherForecast">
           <p className="weatherForecastTitle">Forecast for next 5 days</p>
           <div className="weatherForecastDiv">
-            <div className="forecastDayDiv">
+            <div>
               <p className="forecastDay">Mon</p>
               <img
                 className="forecastIcon"
