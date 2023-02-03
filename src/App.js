@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate.js";
+import FormattedFirstdate from "./FormattedFirstdate.js";
 import WorkFile_searchImage from "./WorkFile_searchImage.svg";
 import WorkFile_mainImage from "./WorkFile_mainImage.svg";
 import WorkFile_properImage from "./WorkFile_properImage.svg";
@@ -12,6 +14,7 @@ export default function App() {
     setWeatherData({
       ready: true,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -40,9 +43,13 @@ export default function App() {
           </div>
 
           <div className="dateData">
-            <p className="dateYear">January 28, 2023</p>
+            <p className="dateYear">
+              <FormattedFirstdate date={weatherData.date} />
+            </p>
             <h1 className="cityName">{weatherData.city}</h1>
-            <p className="dayWeekTime">Saturday 19:21</p>
+            <p className="dayWeekTime">
+              <FormattedDate date={weatherData.date} />
+            </p>
           </div>
 
           <div className="dayWeather">
