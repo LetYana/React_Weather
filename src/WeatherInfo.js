@@ -83,19 +83,19 @@ export default function WeatherInfo(props) {
           </div>
           <div>
             <p className="forecastDay">Mon</p>
-            <img className="forecastIcon" src={props.data.icon} alt="Weather" />
+            <img className="forecastIcon" src={icon_01d} alt="Weather" />
             <p className="forecastTempMax">12°</p>
             <p className="forecastTempMin">9°</p>
           </div>
           <div>
             <p className="forecastDay">Mon</p>
-            <img className="forecastIcon" src={props.data.icon} alt="Weather" />
+            <img className="forecastIcon" src={icon_01d} alt="Weather" />
             <p className="forecastTempMax">12°</p>
             <p className="forecastTempMin">9°</p>
           </div>
           <div>
             <p className="forecastDay">Mon</p>
-            <img className="forecastIcon" src={props.data.icon} alt="Weather" />
+            <img className="forecastIcon" src={icon_10d} alt="Weather" />
             <p className="forecastTempMax">12°</p>
             <p className="forecastTempMin">9°</p>
           </div>
