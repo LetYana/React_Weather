@@ -1,8 +1,20 @@
 import React from "react";
 import FormattedDate from "./FormattedDate.js";
 import FormattedFirstdate from "./FormattedFirstdate.js";
-import WorkFile_mainImage from "./WorkFile_mainImage.svg";
-import WorkFile_properImage from "./WorkFile_properImage.svg";
+
+import wind from "./wind.svg";
+import vmc from "./vmc.svg";
+import humidity from "./humidity.svg";
+import pressure from "./pressure.svg";
+import icon_50d from "./icon_50d.svg";
+import icon_13d from "./icon_13d.svg";
+import icon_11d from "./icon_11d.svg";
+import icon_10d from "./icon_10d.svg";
+import icon_09d from "./icon_09d.svg";
+import icon_04d from "./icon_04d.svg";
+import icon_03d from "./icon_03d.svg";
+import icon_02d from "./icon_02d.svg";
+import icon_01d from "./icon_01d.svg";
 
 export default function WeatherInfo(props) {
   return (
@@ -21,8 +33,8 @@ export default function WeatherInfo(props) {
         <div className="dayWeatherImage">
           <img
             className="dayWeatherIcon"
-            src={props.data.iconUrl}
-            alt="Weather"
+            src={props.data.icon}
+            alt={props.data.description}
           />
         </div>
         <div className="dayWeatherTemp">
@@ -33,38 +45,22 @@ export default function WeatherInfo(props) {
 
       <div className="dayWeatherDetails">
         <div className="detailsWind">
-          <img
-            className="detailsIcon"
-            src={WorkFile_properImage}
-            alt="Weather"
-          />
+          <img className="detailsIcon" src={wind} alt="Weather" />
           <p className="detailsProperty">Wind</p>
           <p className="detailsValue">{Math.round(props.data.wind)} km/h</p>
         </div>
         <div className="detailsHumidity">
-          <img
-            className="detailsIcon"
-            src={WorkFile_properImage}
-            alt="Weather"
-          />
+          <img className="detailsIcon" src={humidity} alt="Weather" />
           <p className="detailsProperty">Humidity</p>
           <p className="detailsValue">{props.data.humidity}%</p>
         </div>
-        <div className="detailsUVIndex">
-          <img
-            className="detailsIcon"
-            src={WorkFile_properImage}
-            alt="Weather"
-          />
+        <div className="detailsVMC">
+          <img className="detailsIcon" src={vmc} alt="Weather" />
           <p className="detailsProperty">VMC</p>
           <p className="detailsValue">{props.data.visibility}</p>
         </div>
         <div className="detailsPressure">
-          <img
-            className="detailsIcon"
-            src={WorkFile_properImage}
-            alt="Weather"
-          />
+          <img className="detailsIcon" src={pressure} alt="Weather" />
           <p className="detailsProperty">Pressure</p>
           <p className="detailsValue">{props.data.pressure} mb</p>
         </div>
@@ -75,51 +71,31 @@ export default function WeatherInfo(props) {
         <div className="weatherForecastDiv">
           <div>
             <p className="forecastDay">Mon</p>
-            <img
-              className="forecastIcon"
-              src={WorkFile_mainImage}
-              alt="Weather"
-            />
+            <img className="forecastIcon" src={props.data.icon} alt="Weather" />
             <p className="forecastTempMax">12°</p>
             <p className="forecastTempMin">9°</p>
           </div>
           <div>
             <p className="forecastDay">Mon</p>
-            <img
-              className="forecastIcon"
-              src={WorkFile_mainImage}
-              alt="Weather"
-            />
+            <img className="forecastIcon" src={props.data.icon} alt="Weather" />
             <p className="forecastTempMax">12°</p>
             <p className="forecastTempMin">9°</p>
           </div>
           <div>
             <p className="forecastDay">Mon</p>
-            <img
-              className="forecastIcon"
-              src={WorkFile_mainImage}
-              alt="Weather"
-            />
+            <img className="forecastIcon" src={props.data.icon} alt="Weather" />
             <p className="forecastTempMax">12°</p>
             <p className="forecastTempMin">9°</p>
           </div>
           <div>
             <p className="forecastDay">Mon</p>
-            <img
-              className="forecastIcon"
-              src={WorkFile_mainImage}
-              alt="Weather"
-            />
+            <img className="forecastIcon" src={props.data.icon} alt="Weather" />
             <p className="forecastTempMax">12°</p>
             <p className="forecastTempMin">9°</p>
           </div>
           <div>
             <p className="forecastDay">Mon</p>
-            <img
-              className="forecastIcon"
-              src={WorkFile_mainImage}
-              alt="Weather"
-            />
+            <img className="forecastIcon" src={props.data.icon} alt="Weather" />
             <p className="forecastTempMax">12°</p>
             <p className="forecastTempMin">9°</p>
           </div>

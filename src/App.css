@@ -148,7 +148,7 @@
 
 .detailsWind,
 .detailsHumidity,
-.detailsUVIndex,
+.detailsVMC,
 .detailsPressure {
   width: 16%;
 }
@@ -384,7 +384,7 @@
 
   .detailsWind,
   .detailsHumidity,
-  .detailsUVIndex,
+  .detailsVMC,
   .detailsPressure {
     width: 23%;
   }

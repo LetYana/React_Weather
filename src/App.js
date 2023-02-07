@@ -20,7 +20,7 @@ export default function App() {
       pressure: response.data.main.pressure,
       visibility: response.data.visibility,
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -49,9 +49,9 @@ export default function App() {
               className="cityInput"
               type="search"
               placeholder="Enter a city"
-              autofocus="on"
+              autoFocus="on"
               required
-              autocomplete="off"
+              autoComplete="off"
               onChange={handleCityChange}
             />
             <input className="citySubmit" type="submit" />
