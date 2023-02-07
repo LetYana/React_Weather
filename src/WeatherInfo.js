@@ -6,14 +6,14 @@ import wind from "./wind.svg";
 import vmc from "./vmc.svg";
 import humidity from "./humidity.svg";
 import pressure from "./pressure.svg";
-import icon_50d from "./icon_50d.svg";
-import icon_13d from "./icon_13d.svg";
-import icon_11d from "./icon_11d.svg";
+// import icon_50d from "./icon_50d.svg";
+// import icon_13d from "./icon_13d.svg";
+// import icon_11d from "./icon_11d.svg";
 import icon_10d from "./icon_10d.svg";
-import icon_09d from "./icon_09d.svg";
-import icon_04d from "./icon_04d.svg";
-import icon_03d from "./icon_03d.svg";
-import icon_02d from "./icon_02d.svg";
+// import icon_09d from "./icon_09d.svg";
+// import icon_04d from "./icon_04d.svg";
+// import icon_03d from "./icon_03d.svg";
+// import icon_02d from "./icon_02d.svg";
 import icon_01d from "./icon_01d.svg";
 
 export default function WeatherInfo(props) {
