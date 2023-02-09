@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate.js";
 import FormattedFirstdate from "./FormattedFirstdate.js";
+import WeatherTemperature from "./WeatherTemperature";
 
 import wind from "./wind.svg";
 import vmc from "./vmc.svg";
@@ -38,7 +39,8 @@ export default function WeatherInfo(props) {
           />
         </div>
         <div className="dayWeatherTemp">
-          <h2>{Math.round(props.data.temperature)}°C</h2>
+          <WeatherTemperature celsius={props.data.temperature} />
+          {/* <h2>{Math.round(props.data.temperature)}°C</h2> */}
           <h3>{props.data.description}</h3>
         </div>
       </div>

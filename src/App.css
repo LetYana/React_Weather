@@ -127,6 +127,20 @@
   margin: 0;
 }
 
+.unitText {
+  font-size: 28px;
+}
+
+.unitText a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.unitText a:hover {
+  color: var(--firstgradient-color);
+}
+
 .dayWeatherTemp h3 {
   float: right;
   text-align: center;
