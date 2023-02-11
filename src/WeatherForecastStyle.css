@@ -1,0 +1,51 @@
+.weatherForecast {
+  padding: 0 10%;
+  margin: 90px 0 50px;
+}
+
+.weatherForecastTitle {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.weatherForecastDiv {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.weatherForecastDiv div {
+  width: 9%;
+  background-color: var(--back-color);
+  padding: 12px 21px 12px;
+  border-radius: 12px;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.weatherForecastDiv div:hover {
+  scale: 1.05;
+}
+
+.weatherForecastDiv p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.dayWeatherIcon {
+  margin: 10px 0 10px;
+}
+
+.forecastTempMax,
+.forecastTempMin {
+  display: inline;
+}
+
+.forecastTempMax {
+  padding-right: 10px;
+}

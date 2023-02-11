@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import "./App.css";
 import axios from "axios";
+
+import "./App.css";
 import WeatherInfo from "./WeatherInfo.js";
+import WeatherForecast from "./WeatherForecast.js";
+
 import WorkFile_searchImage from "./WorkFile_searchImage.svg";
 
 export default function App() {
@@ -58,6 +61,7 @@ export default function App() {
           </form>
 
           <WeatherInfo data={weatherData} />
+          <WeatherForecast />
 
           <hr className="spaceHr" />
 

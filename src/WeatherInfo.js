@@ -28,11 +28,6 @@ export default function WeatherInfo(props) {
             code={props.data.icon}
             description={props.data.description}
           />
-          {/* <img
-            className="dayWeatherIcon"
-            src={props.data.icon}
-            alt={props.data.description}
-          /> */}
         </div>
         <div className="dayWeatherTemp">
           <WeatherTemperature celsius={props.data.temperature} />
@@ -60,42 +55,6 @@ export default function WeatherInfo(props) {
           <img className="detailsIcon" src={pressure} alt="Weather" />
           <p className="detailsProperty">Pressure</p>
           <p className="detailsValue">{props.data.pressure} mb</p>
-        </div>
-      </div>
-
-      <div className="weatherForecast">
-        <p className="weatherForecastTitle">Forecast for next 5 days</p>
-        <div className="weatherForecastDiv">
-          <div>
-            <p className="forecastDay">Mon</p>
-            <img className="forecastIcon" src={wind} alt="Weather" />
-            <p className="forecastTempMax">12°</p>
-            <p className="forecastTempMin">9°</p>
-          </div>
-          <div>
-            <p className="forecastDay">Mon</p>
-            <img className="forecastIcon" src={wind} alt="Weather" />
-            <p className="forecastTempMax">12°</p>
-            <p className="forecastTempMin">9°</p>
-          </div>
-          <div>
-            <p className="forecastDay">Mon</p>
-            <img className="forecastIcon" src={wind} alt="Weather" />
-            <p className="forecastTempMax">12°</p>
-            <p className="forecastTempMin">9°</p>
-          </div>
-          <div>
-            <p className="forecastDay">Mon</p>
-            <img className="forecastIcon" src={wind} alt="Weather" />
-            <p className="forecastTempMax">12°</p>
-            <p className="forecastTempMin">9°</p>
-          </div>
-          <div>
-            <p className="forecastDay">Mon</p>
-            <img className="forecastIcon" src={wind} alt="Weather" />
-            <p className="forecastTempMax">12°</p>
-            <p className="forecastTempMin">9°</p>
-          </div>
         </div>
       </div>
     </div>
