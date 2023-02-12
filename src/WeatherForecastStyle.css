@@ -37,9 +37,15 @@
   text-transform: uppercase;
 }
 
-.dayWeatherIcon {
-  margin: 10px 0 10px;
+.dayWeatherIconForecast {
+  max-width: 100%;
+  margin: 12px 0 10px;
+  transform: scale(130%);
 }
+
+/* .dayWeatherIcon {
+  margin: 10px 0 10px;
+} */
 
 .forecastTempMax,
 .forecastTempMin {

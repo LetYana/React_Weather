@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon.js";
+import WeatherIconForecast from "./WeatherIconForecast.js";
 import "./WeatherForecastStyle.css";
 
 export default function WeatherForecast() {
@@ -10,7 +10,7 @@ export default function WeatherForecast() {
         <div>
           <p className="forecastDay">Mon</p>
 
-          <WeatherIcon code="01d" />
+          <WeatherIconForecast code="01d" />
 
           <p className="forecastTempMax">12°</p>
           <p className="forecastTempMin">9°</p>
