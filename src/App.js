@@ -15,6 +15,7 @@ export default function App() {
     console.log(response.data);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
@@ -61,7 +62,7 @@ export default function App() {
           </form>
 
           <WeatherInfo data={weatherData} />
-          <WeatherForecast />
+          <WeatherForecast coordinates={weatherData.coordinates} />
 
           <hr className="spaceHr" />
 
