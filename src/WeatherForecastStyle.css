@@ -11,14 +11,14 @@
   text-transform: uppercase;
 }
 
-.weatherForecastDiv {
-  text-align: center;
+.wrapperForecast {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.weatherForecastDiv div {
+.weatherForecastDiv {
+  text-align: center;
   width: 9%;
   background-color: var(--back-color);
   padding: 12px 21px 12px;
@@ -26,7 +26,7 @@
   transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.weatherForecastDiv div:hover {
+.weatherForecastDiv:hover {
   scale: 1.05;
 }
 
@@ -54,4 +54,67 @@
 
 .forecastTempMax {
   padding-right: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .weatherForecast {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .weatherForecastDiv {
+    width: 8%;
+  }
+
+  .dayWeatherIconForecast {
+    margin: 13px 0 11px;
+    transform: scale(150%);
+  }
+
+  .forecastTempMax,
+  .forecastTempMin {
+    display: block;
+  }
+
+  .forecastTempMax {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .weatherForecast {
+    padding: 0 2%;
+    margin: 66px 0 50px;
+  }
+
+  .wrapperForecast {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .weatherForecastDiv {
+    width: 88%;
+  }
+
+  .weatherForecastDiv p {
+    font-size: 15px;
+  }
+
+  .forecastTempMax,
+  .forecastTempMin {
+    display: inline;
+  }
+
+  .forecastTempMax {
+    padding-right: 20px;
+  }
+
+  .dayWeatherIconForecast {
+    max-width: 22%;
+    margin: 3px auto 3px;
+    transform: none;
+    display: block;
+  }
 }

@@ -164,7 +164,7 @@
 .detailsHumidity,
 .detailsVMC,
 .detailsPressure {
-  width: 16%;
+  width: 18%;
 }
 
 .detailsIcon {
@@ -228,7 +228,7 @@
 
 @media screen and (max-width: 540px) {
   .citySearch {
-    padding: 70px 5% 30px;
+    padding: 60px 5% 30px;
   }
 
   .cityInput {
@@ -258,16 +258,16 @@
   .dayWeatherIcon {
     max-width: 92%;
   }
+
+  .spaceHr {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  .weatherForecastDiv div {
-    width: 7%;
-  }
-
   .detailsWind,
   .detailsHumidity,
-  .detailsUVIndex,
+  .detailsVMC,
   .detailsPressure {
     width: 20%;
   }
@@ -297,15 +297,6 @@
   .dayWeatherTemp h3 {
     font-size: 20px;
   }
-
-  .forecastTempMax,
-  .forecastTempMin {
-    display: block;
-  }
-
-  .forecastTempMax {
-    padding-right: 0;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -332,7 +323,7 @@
   }
 
   .dayWeatherTemp h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .dayWeatherDetails {
@@ -358,27 +349,7 @@
     font-size: 12px;
   }
 
-  .weatherForecast {
-    padding: 0 2%;
-  }
-
-  .weatherForecast {
-    margin: 66px 0 50px;
-  }
-
   .spaceHr {
     width: 90%;
-  }
-
-  .weatherForecastDiv {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 8px;
-    row-gap: 8px;
-  }
-
-  .weatherForecastDiv div {
-    width: 14%;
-    padding: 12px 25px 12px;
   }
 }
