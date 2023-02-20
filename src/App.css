@@ -7,6 +7,10 @@
   --secondgradient-color: #6476f6;
 }
 
+body {
+  margin: 0;
+}
+
 .App {
   text-align: center;
   font-family: "Rubik", sans-serif;
@@ -158,6 +162,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.dayWeatherDetails div {
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.dayWeatherDetails div:hover {
+  scale: 1.05;
 }
 
 .detailsWind,
@@ -331,7 +343,7 @@
   }
 
   .dayWeatherDetails {
-    padding: 0px 2%;
+    padding: 0px 5%;
   }
 
   .detailsWind,
@@ -351,5 +363,42 @@
 
   .spaceHr {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .dateData {
+    margin: 50px 0 50px;
+  }
+  .dayWeather {
+    gap: 0;
+  }
+  .dayWeatherTemp h2 {
+    font-size: 50px;
+  }
+
+  .unitText {
+    font-size: 22px;
+  }
+
+  .dayWeatherTemp h3 {
+    font-size: 13px;
+  }
+
+  .detailsProperty {
+    font-size: 11px;
+  }
+
+  .detailsValue {
+    font-size: 10px;
+  }
+
+  .dayWeatherDetails {
+    margin: 50px 0 40px;
+  }
+
+  .gitHub {
+    font-size: 12px;
+    padding-top: 10px;
   }
 }

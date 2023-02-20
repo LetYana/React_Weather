@@ -84,8 +84,8 @@
 
 @media screen and (max-width: 400px) {
   .weatherForecast {
-    padding: 0 2%;
-    margin: 66px 0 50px;
+    padding: 0 5%;
+    margin: 66px 0 40px;
   }
 
   .wrapperForecast {
@@ -95,7 +95,16 @@
   }
 
   .weatherForecastDiv {
-    width: 88%;
+    width: auto;
+    padding: 7px 36px 7px;
+  }
+
+  .weatherForecastDiv div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .weatherForecastDiv p {
@@ -108,12 +117,12 @@
   }
 
   .forecastTempMax {
-    padding-right: 20px;
+    padding-right: 15px;
   }
 
   .dayWeatherIconForecast {
     max-width: 22%;
-    margin: 3px auto 3px;
+    margin: 0 auto;
     transform: none;
     display: block;
   }
